@@ -21,3 +21,7 @@ Route::get('/y',function (){
     $get = request("name");
     echo $get;
 });
+
+Route::get('/halildavar',function (){
+    echo "Test";
+})
