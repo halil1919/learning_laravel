@@ -13,6 +13,7 @@
 
 /* Backend Route */
 require base_path('routes/backend/web.php');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -24,8 +25,13 @@ Route::get('/y',function (){
 
 Route::get('/halildavar',function (){
     echo "Test";
-})
+});
 
  Route::get('/kocamemeli-melisa',function (){
     echo "Test";
-})
+});
+
+Route::get('/delime-nea',function (){
+    $get = request("name");
+    echo $get;
+});
