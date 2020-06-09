@@ -25,3 +25,7 @@ Route::get('/y',function (){
 Route::get('/halildavar',function (){
     echo "Test";
 })
+
+ Route::get('/kocamemeli-melisa',function (){
+    echo "Test";
+})
